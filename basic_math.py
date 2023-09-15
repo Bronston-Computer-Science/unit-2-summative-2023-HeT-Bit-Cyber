@@ -1,0 +1,29 @@
+import math
+print('PICK AN OPTION 1 TO ADD,2 TO SUBTRACT,3 TO DIVIDE OR 4 TO MULTIPLY')
+OPTION= int(input())
+if OPTION == 1:
+ NUM1=int(input("INSERT THE FIRST NUMBER"))
+ NUM2=int(input("INSERT THE SECOND NUMBER"))
+ RES=NUM1+NUM2
+ print('YOUR ANSWER IS',RES)
+if OPTION == 2:
+ NUM1=int(input("INSERT THE FIRST NUMBER"))
+ NUM2=int(input("INSERT THE SECOND NUMBER"))
+ RES=NUM1-NUM2
+ print('THE ANSWER IS',RES)
+if OPTION == 3:
+ NUM1=int(input("INSERT THE FIRST NUMBER"))
+ NUM2=int(input("INSERT THE SECOND NUMBER"))
+try: 
+    RES=NUM1/NUM2
+    if NUM2 > 0:
+        print(RES)
+    else:
+     RES = NUM1/NUM2
+except ZeroDivisionError:    
+    print("CANNOT DIVIDE WITH ZERO USE A DIFFERENT NUMBER")
+if OPTION == 4:
+ NUM1=int(input("INSERT THE FIRST NUMBER"))
+ NUM2=int(input("INSERT THE SECIND NUMBER"))
+ RES=NUM1*NUM2
+ print("THE ANSWER IS",RES)
